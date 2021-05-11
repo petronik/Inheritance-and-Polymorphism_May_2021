@@ -19,6 +19,10 @@ public class Voucher {
 		_voucherNumber = nextVoucherNumber;
 	}
 	
+	public int getVoucherNumber() {
+		return _voucherNumber;
+	}
+	
 	public String toString() {
 		return _voucherNumber + " " +_amount;
 	}
