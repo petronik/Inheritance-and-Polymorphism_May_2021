@@ -1,10 +1,10 @@
 package Module1;
 
-
 /*
 ##Requirements
 
-The constructor should take an array as an argument, this will contain 3 integers of the form [width, length, height] from which the Block should be created.
+The constructor should take an array as an argument, 
+this will contain 3 integers of the form [width, length, height] from which the Block should be created.
 
 Define these methods:
 
@@ -34,20 +34,48 @@ Define these methods:
 Note: no error checking is needed
 */
 
-class Block{
+class Block {
+	private int  _width, _length, _height;
 
+	public Block(int... s) {
+		_width = s[0];
+		_length = s[1];
+		_height = s[2];
+	}
+
+	public int getWidth() {
+		return _width;
+	}
+
+	public int getLength() {
+		return _length;
+	}
+
+	public int getHeight() {
+		return _height;
+	}
+
+	public int getVolume() {
+		return _length * _height * _width;
+	}
+
+	public int getSurfaceArea() {
+		return (2 * (_length * _height) + 2 * (_height * _width) + 2 * (_length * _width));
+	}
 }
+
 public class _exercise_02 {
 
 	public static void main(String[] args) {
 
-		// Block b = new Block(new int[]{2,2,2});
+		Block b = new Block(new int[] { 2, 2, 2 });
+		Block b1 = new Block(2,3,4,5,6,7,8);
 		
-        // b.getWidth(); // 2
-        // b.getLength(); // 2
-        // b.getHeight(); // 2
-        // b.getVolume()); // 8
-        // b.getSurfaceArea(); // 24
+        System.out.println(b.getWidth());  // 2
+        System.out.println(b.getLength()); ; // 2
+        System.out.println(b.getHeight()); ; // 2
+        System.out.println(b.getVolume()); ; // 8
+        System.out.println(b.getSurfaceArea()); ; // 24
 	}
 
 }
