@@ -1,14 +1,9 @@
 package Module1;
 
-public class Manager {
+public class Manager extends Person {
 
-	private String _name;
-	
-	public Manager(String name) {
-		_name = name;
-	}
-	
-	public String getName() {
-		return _name;
+	public Manager(String firstName, String lastName) {
+		super(firstName, lastName);
+		System.err.println("Child class Manager ctor called");
 	}
 }

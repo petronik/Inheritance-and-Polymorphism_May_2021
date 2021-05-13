@@ -36,9 +36,52 @@ class Worker {
 	}
 }
 
+enum UserStatus {
+	PENDING, ACTIVE, INACTIVE, DELETED;
+}
+
+enum BankUrl {
+	CIBC("https://cibc.ca"),
+	RBC("https://rbc.ca"),
+	MARK_BANK("https://mark-bank.ca");
+	
+	private String _url;
+	
+	BankUrl(String url) {
+		_url = url;
+	}
+	
+	String url() {
+		return _url;
+	}
+}
+
+enum Operation {
+	PLUS, MINUS, TIMES, DIVIDE;
+	
+	double calc(double a, double b) {
+		
+		switch(this) {
+		case PLUS: return a + b;
+		case MINUS: return a - b;
+		case TIMES: return a * b;
+		case DIVIDE: return a / b;
+		}
+		
+		return 0;
+	}
+}
+
 public class driver {
 
 	public static void main(String[] args) {
+		
+		System.out.println(Operation.PLUS.calc(2, 3));
+		
+		
+		System.out.println(BankUrl.CIBC.url());
+		
+		
 		
 		ArrayList<String> list = new ArrayList();
 		
