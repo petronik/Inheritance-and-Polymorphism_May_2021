@@ -1,4 +1,4 @@
-package Module1;
+
 
 public class SalesPerson extends Person {
 	

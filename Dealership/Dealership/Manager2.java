@@ -1,8 +1,7 @@
-public class SalesPerson {
+public class Manager2 {
     private String name;
-    private double sales = 0.0;
 
-    public SalesPerson(String name){
+    public Manager2(String name){
         this.name = name;
     }
     public String getName(){

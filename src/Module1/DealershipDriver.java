@@ -1,4 +1,4 @@
-package Module1;
+
 
 public class DealershipDriver {
 
@@ -8,7 +8,7 @@ public class DealershipDriver {
 		
 		manager.getName();
 		
-		SalesPerson sp1 = new SalesPerson("Lucy", "Doe");
+		SalesPerson2 sp1 = new SalesPerson2("Lucy", "Doe");
 		
 		sp1.setSales(77);
 		sp1.getName();
