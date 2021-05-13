@@ -4,7 +4,16 @@ public class DealershipDriver {
 
 	public static void main(String[] args) {
 			
-		Manager manager = new Manager("Mark the Boss");
+		Manager manager = new Manager("Mark", "Smith");
+		
+		manager.getName();
+		
+		SalesPerson sp1 = new SalesPerson("Lucy", "Doe");
+		
+		sp1.setSales(77);
+		sp1.getName();
+		
+		/*
 		Dealership dealership = new Dealership("OK Used cars", manager);
 		
 		dealership.addSalesPerson( new SalesPerson("Lucy") );
@@ -17,6 +26,7 @@ public class DealershipDriver {
 		
 		
 		dealership.printStatus();
+		*/
 	}
 
 }

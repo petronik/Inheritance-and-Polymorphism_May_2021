@@ -1,15 +1,16 @@
 package Module1;
 
-public class SalesPerson {
-	private String _name;
+public class SalesPerson extends Person {
+	
 	private double _sales = 0.0;
 	
-	public SalesPerson(String name) {
-		_name = name;
+	public SalesPerson(String firstName, String lastName) {
+		super(firstName, lastName);
 	}
 	
-	public String getName() {
-		return _name;
+	public SalesPerson(String firstName, String lastName, double sales) {
+		super(firstName, lastName);
+		_sales = sales;
 	}
 	
 	public void setSales(double value) {
