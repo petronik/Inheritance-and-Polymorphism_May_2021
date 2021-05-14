@@ -25,7 +25,7 @@ Note : Regardless the sign of negativity .
 
 maxGap ({-7,-42,-809,-14,-12}) ==> return (767)  
 
-Explanation:
+ Explanation:
 The Maximum Gap after sorting the array is 767 , The difference between | -809- (-42) | = 767 .
 
 Note : Regardless the sign of negativity .

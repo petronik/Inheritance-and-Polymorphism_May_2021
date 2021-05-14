@@ -39,7 +39,7 @@ The digit frequencies are:
 etc...
 and so the method would return [1,9,6,3,0,1,1,1,1,1]
  */
-
+ 
 public class _exercise_05 {
 	
 	public static int[] paintLetterboxes(final int start, final int end) {
