@@ -22,7 +22,7 @@ public class Address {
 	}
 	
 	public String getAddress() {
-		return (_app == null ? "" : (_app + "-")) + _building + " " + _street + 
+		return (_app == null || _app.equals("") ? "" : (_app + "-")) + _building + " " + _street + 
 				", " + _city + ", " + _provance + " " + _country + " " + _postalCode;
 	}
 }
