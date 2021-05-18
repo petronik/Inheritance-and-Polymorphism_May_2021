@@ -1,4 +1,5 @@
-package Module1;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /*
  Given an array of integers , 
@@ -27,14 +28,23 @@ The maximum product obtained from multiplying -2 * 7 = -14, and they're adjacent
 public class _exercise_04 {
 
 	public static int adjacentElementsProduct(int[] array) {
-
-
-		return 0;
+ 		
+		int [] value = new int[array.length - 1];
+		for (int i = 0; i < array.length - 1; i++) {
+			value[i] = array[i] * array[i + 1];
+		}
+		Arrays.sort(value);
+		return  value[value.length - 1];
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		int[] num1 = {1, 2, 3}; //==> return 6
+		int[] num2 = {9, 5, 10, 2, 24, -1, -48}; // ==> return 50
+		int[] num3 = {-23, 4, -5, 99, -27, 329, -2, 7, -921};  //==>  return -14
 
+		System.out.println(adjacentElementsProduct(num1));
+		System.out.println(adjacentElementsProduct(num2));
+		System.out.println(adjacentElementsProduct(num3));
 	}
-
 }

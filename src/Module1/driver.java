@@ -83,7 +83,7 @@ public class driver {
 		
 		
 		
-		ArrayList<String> list = new ArrayList();
+		ArrayList<String> list = new ArrayList<>();
 		
 		list.add("CIBC");
 		list.add("RBC");

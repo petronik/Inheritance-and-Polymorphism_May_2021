@@ -1,4 +1,4 @@
-package Module1;
+import java.util.Arrays;
 
 /*
  Given an array/list [] of integers , Find The maximum difference between the successive elements in its sorted form.
@@ -40,14 +40,30 @@ Note : Regardless the sign of negativity .
 
 public class _exercise_03 {
 	
-	public static int maxGap(int[] numbers)
-	{
-	    return 0; 
+	public static int maxGap(int[] numbers){
+		int [] biggest = new int[numbers.length - 1];
+		Arrays.sort(numbers);
+		for (int i = 0; i < numbers.length - 1; i++) {
+			biggest[i] =  Math.abs(Math.abs(numbers[i]) - Math.abs(numbers[i + 1]));
+		}
+		Arrays.sort(biggest);
+		return biggest[biggest.length - 1]; 
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		 int[] num1 = {-54,37,0,64,640,0,-15}; //576
+		 int[] num2 ={13,10,5,2,9};  //4
+		 int[] num3 ={-3,-27,-4,-2};  //23
+		 int[] num4 ={-7,-42,-809,-14,-12};  //767
+
+	
+		System.out.println(maxGap(num1));
+		System.out.println(maxGap(num2));
+		System.out.println(maxGap(num3));
+		System.out.println(maxGap(num4));
+
+		
 	}
 
 }

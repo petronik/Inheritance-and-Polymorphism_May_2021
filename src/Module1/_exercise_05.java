@@ -45,7 +45,7 @@ public class _exercise_05 {
 	public static int[] paintLetterboxes(final int start, final int end) {
 
 		int[] res = new int[10];
-
+		
 
 		return res;
 	}
