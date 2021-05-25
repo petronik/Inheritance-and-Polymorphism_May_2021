@@ -95,17 +95,9 @@ public class driver {
 		System.out.println(Operation.PLUS.calc(2, 3));
 
 		System.out.println(BankUrl.CIBC.url());
-<<<<<<< HEAD
-		
-		
-		
-		ArrayList<String> list = new ArrayList<>();
-		
-=======
 
 		ArrayList<String> list = new ArrayList();
 
->>>>>>> 93163a6a18ef5240f210f7baec0621d516577978
 		list.add("CIBC");
 		list.add("RBC");
 		list.add("Bank of Montreal");

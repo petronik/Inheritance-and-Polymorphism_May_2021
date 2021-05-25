@@ -7,7 +7,7 @@ public class Savings2 extends BankAccount2{
     }
     @Override
     public  void dislpay() {
-        System.out.println("Savings account balance = $" + getBalance());
+        System.out.println("Savings account №" + count++  + "  balance = $" + getBalance());
     }
     public void addInterest() {
         deposit(_intRate * getBalance());

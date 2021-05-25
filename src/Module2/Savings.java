@@ -1,6 +1,6 @@
 package Module2;
 
-public class Savings extends BankAccount2{
+public class Savings extends BankAccount{
 	
     private double intRate;
 
